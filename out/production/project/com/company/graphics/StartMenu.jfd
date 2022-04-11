@@ -1,0 +1,85 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"undecorated": true
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:306:p, space ::480:x, comp closeLBL:::p:40:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp closeLBL:::::x}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Start Menu"
+					"foreground": sfield java.awt.Color white
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "closeLBL"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeLBLMouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:346:p, par l {comp resetBTN:::p:143:p, comp startBTN:::p:143:p, comp infoBTN::l:p:143:p, comp exitBTN::l:p:143:p}, space ::349:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp startBTN:::p:65:p, space s:::p, comp resetBTN:::p:65:p, space s:::p, comp infoBTN:::p:65:p, space s:::p, comp exitBTN:::p:65:p, space ::40:x}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "startBTN"
+					"text": "Start"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 0, 0, 52, 255 )
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/play-button.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "exitBTN"
+					"text": "Exit"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 102, 0, 0, 255 )
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/stand-by.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "resetBTN"
+					"text": "Reset"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 153, 51, 0, 255 )
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/reset.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "infoBTN"
+					"text": "Info"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 0, 51, 0, 255 )
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/info.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "infoBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 840, 460 )
+		} )
+	}
+}

@@ -1,0 +1,185 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:326:p, space :::x, comp label2:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par t {comp label2:::p:38:p, comp label1:::p::p}, space :::x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Bank  Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:62:p, par t {seq {par l {comp addAccountBTN:::p:240:p, comp getAccountBTN:::p:240:p}, space :40:62:x, par t {comp removePersonnelBTN::t:p:240:p, comp addPersonnelBTN::t:p:240:p}}, seq l {par t {comp label9:::p:145:p, comp label8:::p:145:p, comp label5:::p:145:p, comp label4:::p:145:p, comp label3:::p:145:p}, space s:::p, par l {comp personnelsLBL:::p:346:p, comp balanceLBL:::p:346:p, comp accountsLBL::l:p:346:p, comp addressLBL::l:p:346:p, comp nameLBL::l:p:346:p}, space :0:33:x}}, space :p:68:p, par l {comp getPersonnelBTN:::p:240:p, comp backBTN:::p:230:p}, space :p:41:p}}"
+				"$verticalGroup": "par l {seq t {space :::p, par b {comp nameLBL::b:p:40:p, comp label3::b:p:40:p}, space s:::p, par b {comp addressLBL::b:p:40:p, comp label4::b:p:40:p}, space s:::p, par b {comp accountsLBL::b:p:40:p, comp label5::b:p:40:p}, space s:::p, par b {comp personnelsLBL::b:p:40:p, comp label8::b:p:40:p}, space s:::p, par b {comp label9::b:p:40:p, comp balanceLBL::b:p:40:p}, space s:::p, par b {comp getPersonnelBTN::b:p:60:p, comp addPersonnelBTN::b:p::p, comp addAccountBTN::b:p:60:p}, space s:::p, par b {comp removePersonnelBTN::b:p:60:p, comp getAccountBTN::b:p:60:p, comp backBTN::b:p::p}, space ::56:x}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addAccountBTN"
+					"text": "Add Account"
+					"background": new java.awt.Color( 0, 0, 51, 255 )
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/add-user.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addAccountBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addPersonnelBTN"
+					"text": "Add Personnel"
+					"background": new java.awt.Color( 0, 25, 25, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/add employee.jpg" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addPersonnelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "removePersonnelBTN"
+					"text": "Remove Personnel"
+					"background": new java.awt.Color( 102, 0, 0, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/remove emplyee.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removePersonnelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "getAccountBTN"
+					"text": "Get Accounts"
+					"background": new java.awt.Color( 0, 51, 0, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/user.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "getAccountBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "getPersonnelBTN"
+					"text": "Get Personnel"
+					"background": new java.awt.Color( 20, 0, 20, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/contact-list.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "getPersonnelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Name"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/banking.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Address"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/address.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Accounts"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/user.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Personnels"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/personnel.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Balance"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/budget (1).png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameLBL"
+					"text": "text"
+					"font": &Font2 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "addressLBL"
+					"text": "text"
+					"font": #Font2
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "accountsLBL"
+					"text": "text"
+					"font": #Font2
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "personnelsLBL"
+					"text": "text"
+					"font": #Font2
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "balanceLBL"
+					"text": "text"
+					"font": #Font2
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backBTN"
+					"text": "Back"
+					"background": new java.awt.Color( 153, 51, 0, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/back icon.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 955, 590 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

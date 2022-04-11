@@ -1,0 +1,120 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:326:p, space ::555:x, comp label2:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label2:::p:38:p, comp label1:::p::p}, space :::x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Travel Information Menu"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :::p, comp travelNameLBL:::p:326:p, space :p:36:p, par l {comp originBTN:::p:180:p, comp destinationBTN::l:p:180:p, comp driverBTN::l:p:180:p, comp vehicleBTN::l:p:180:p, comp passengersBTN::l:p:180:p, comp dateAndCostBTN::l:p:180:p}}, seq l {space :p:338:p, comp okBTN:::p:250:p}}, space ::340:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l:::p {comp travelNameLBL::::55:x, comp originBTN::::55:x}, space s:::p, comp destinationBTN:::p:55:p, space s:::p, comp driverBTN:::p:55:p, space s:::p, comp vehicleBTN:::p:55:p, space s:::p, comp passengersBTN:::p:55:p, space s:::p, comp dateAndCostBTN:::p:55:p, space s:::p, comp okBTN:::p::p, space ::26:x}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "passengersBTN"
+					"text": "Passengrs"
+					"background": &Color0 new java.awt.Color( 0, 0, 51, 255 )
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/passenger.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "passengersBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "originBTN"
+					"text": "Origin"
+					"background": #Color0
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/point.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "originBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "driverBTN"
+					"text": "Driver"
+					"background": #Color0
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/driver.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "driverBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "destinationBTN"
+					"text": "Destination"
+					"background": #Color0
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/point.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "destinationBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "dateAndCostBTN"
+					"text": "Date & Cost"
+					"background": #Color0
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/calendar.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dateAndCostBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okBTN"
+					"text": "Ok"
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"background": new java.awt.Color( 0, 40, 0, 255 )
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/red checked.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "vehicleBTN"
+					"text": "Vehicle"
+					"background": #Color0
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/vehicle.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "vehicleBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "travelNameLBL"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 930, 620 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"undecorated": true
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:306:p, space :::x, comp closeLBL:::p:40:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp closeLBL:::::x}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Program Information"
+					"foreground": sfield java.awt.Color white
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "closeLBL"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeLBLMouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space ::58:x, par l {seq t {comp exitBTN:::p:143:p, space :p:346:p}, seq t {par l {comp label6:::p:560:p, par t:::p {seq {comp label4:::::x, space :::p, comp label5:::p:560:p}, seq {comp label2:::p:95:p, space :p:40:p, comp label3:::p:560:p}}, comp label7::l:p:560:p}, space :p:85:p}}}}"
+				"$verticalGroup": "par l {seq t {space :p:25:p, par b {comp label2::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp label4::b:p::p}, space s:::p, comp label6:::p::p, space s:::p, comp label7:::p::p, space ::38:x, comp exitBTN:::p:65:p, space :p:26:p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "exitBTN"
+					"text": "close"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 0, 15, 15, 255 )
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Program:"
+					"foreground": sfield java.awt.Color white
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Mini Country - Advacend Programming Final Project"
+					"foreground": sfield java.awt.Color white
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Programmer:"
+					"foreground": sfield java.awt.Color white
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Pouria Sameti"
+					"foreground": sfield java.awt.Color white
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Isfahan University"
+					"foreground": sfield java.awt.Color white
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Summer 2021"
+					"foreground": sfield java.awt.Color white
+					"font": #Font0
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 840, 460 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

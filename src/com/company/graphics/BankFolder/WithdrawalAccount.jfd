@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel3:::::x, comp panel4::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel3:::p::p, space s:::p, comp panel4:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"$sizePolicy": 1
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label8:::p:326:p, space ::500:x, comp label11:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label11:::p:38:p, comp label8:::p::p}, space :::x}}"
+			} ) {
+				name: "panel3"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Withdrawal Money Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:248:p, par l:::p {seq {comp label13:::p:120:p, space s:::p, comp amountSPN:::p:237:p, space :::p, comp label14:::p::p}, seq {comp withdrawalBTN:::p:150:p, space :::x, comp closeBTN:::p:150:p}}, space ::233:x}}"
+				"$verticalGroup": "par l {seq l {space :p:28:p, par b {comp amountSPN::b:p::p, comp label13::b:p:40:p, comp label14::b:p:40:p}, space ::106:x, par b {comp withdrawalBTN::b:p::p, comp closeBTN::b:p::p}, space :p:26:p}}"
+			} ) {
+				name: "panel4"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "Amount"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/dollar.png" )
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "amountSPN"
+					"model": new javax.swing.SpinnerNumberModel {
+						minimum: 0
+					}
+					"cursor": new java.awt.Cursor( 12 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "withdrawalBTN"
+					"text": "withdrawal"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 0, 0, 102, 255 )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "withdrawalBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "closeBTN"
+					"text": "Close"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 102, 0, 0, 255 )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"text": "$"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 875, 350 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

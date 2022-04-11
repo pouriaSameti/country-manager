@@ -1,0 +1,94 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2:::::x, comp panel1::t:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"undecorated": true
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:265:p, space ::595:x, comp label2:::p:41:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp label2:::::x}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "Create Seaport Menu"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:107:p, par l {seq t {comp label4:::p:130:p, space :::p, comp addressTXT::::554:x}, seq t {comp label5:::p:133:p, space :::p, comp setWharves:::p:201:p, space ::350:x}, seq t {comp label3:::p:114:p, space :p:22:p, comp nameTXT::::554:x}, seq l {space :p:3:p, comp saveBTN:::p:208:p, space ::271:x, comp cancelBTN:::p:208:p}}, space :p:116:p}}"
+				"$verticalGroup": "par l {seq t {space :p:32:p, par b {comp label3::b:p:42:p, comp nameTXT::b:p:38:p}, space :p:42:p, par b {comp label4::b:p:42:p, comp addressTXT::b:p:38:p}, space :p:46:p, par b {comp label5::b:p:42:p, comp setWharves::b:p::p}, space ::200:x, par b {comp saveBTN::b:p:50:p, comp cancelBTN::b:p::p}, space :p:72:p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "saveBTN"
+					"text": "Save"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 0, 0, 51, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelBTN"
+					"text": "Cancel"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 102, 0, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Name"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Address"
+					"font": #Font1
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameTXT"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "addressTXT"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Wharves"
+					"font": #Font1
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "setWharves"
+					"model": new javax.swing.SpinnerNumberModel( 1, 1, 6, 1 )
+					"background": new java.awt.Color( 51, 0, 0, 255 )
+					"cursor": #Cursor0
+					"opaque": true
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 915, 670 )
+		} )
+	}
+}

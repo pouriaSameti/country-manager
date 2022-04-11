@@ -1,0 +1,114 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, comp selectCityPanel::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp selectCityPanel:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"undecorated": true
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:293:p, space ::586:x, comp label2:::p:37:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label2:::::x, comp label1:::::x}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Get Travel Information Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:247:p, par l {comp label5:::p::p, comp label3:::p:150:p, comp label6::l:p::p, comp backBTN::l:p:150:p}, par l {seq {space :p:2:p, comp cityCMB:::p:220:p}, seq l {space :::p, par l {comp terminalCMB::l:p:220:p, comp travelCMB:::p:220:p}}, seq t {space :::p, par l {comp cityInfoBTN::t:p:61:p, comp terminalInfoBTN::t:p:61:p, comp finishBTN::t:p:150:p}}}, space ::305:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label3::l:p:42:p, seq l {comp cityCMB:::p::p, space :::p, comp cityInfoBTN:::p::p}}, space :p:50:p, par b {comp label5::b:p:42:p, comp terminalCMB::b:p::p}, space :::p, comp terminalInfoBTN:::p::p, space :p:41:p, par b {comp travelCMB::b:p::p, comp label6::b:p:42:p}, space ::33:x, par b {comp finishBTN::b:p:50:p, comp backBTN::b:p::p}, space :p:22:p}}"
+			} ) {
+				name: "selectCityPanel"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "City"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cityCMB"
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cityCMBItemStateChanged", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cityInfoBTN"
+					"text": "Info"
+					"foreground": &Color1 new java.awt.Color( 255, 255, 255, 255 )
+					"background": &Color2 new java.awt.Color( 0, 0, 102, 255 )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cityInfoBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Terminals"
+					"font": #Font0
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "terminalCMB"
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "terminalCMBItemStateChanged", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "terminalInfoBTN"
+					"text": "Info"
+					"foreground": #Color1
+					"background": #Color2
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "terminalInfoBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "finishBTN"
+					"text": "Finish"
+					"foreground": #Color1
+					"background": new java.awt.Color( 0, 0, 51, 255 )
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/check 2.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "finishBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backBTN"
+					"text": "Back"
+					"foreground": #Color1
+					"background": new java.awt.Color( 0, 102, 0, 255 )
+					"font": #Font1
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/sign-out.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Teravel"
+					"font": #Font0
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "travelCMB"
+					"cursor": #Cursor0
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 930, 480 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

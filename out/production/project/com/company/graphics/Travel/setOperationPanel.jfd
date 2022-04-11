@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x, comp panel2::t:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"undecorated": true
+			"defaultCloseOperation": 3
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:326:p, space ::555:x, comp label2:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq t {space :::x, par l {comp label1:::p::p, comp label2:::p:38:p}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Travel  Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space ::366:x, par t {comp backBTN:::p:234:p, comp newTravelBTN:::p:234:p, comp inputTravelBTN:::p:234:p, comp outputTravelBTN::t:p:234:p}, space :p:328:p}}"
+				"$verticalGroup": "par l {seq l {space :p:51:p, comp newTravelBTN:::p:60:p, space s:::p, comp inputTravelBTN:::p:60:p, space :p:18:p, comp outputTravelBTN:::p:60:p, space s:::p, comp backBTN:::p:60:p, space ::35:x}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "inputTravelBTN"
+					"text": "Get Input Travel"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/enter.png" )
+					"background": new java.awt.Color( 51, 0, 102, 255 )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "inputTravelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "outputTravelBTN"
+					"text": "Get Output Travel"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/sign-out.png" )
+					"background": new java.awt.Color( 0, 45, 0, 255 )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "outputTravelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "newTravelBTN"
+					"text": "New Travel"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/new-document.png" )
+					"background": new java.awt.Color( 0, 0, 102, 255 )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "newTravelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backBTN"
+					"text": "Back"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/back icon.png" )
+					"background": new java.awt.Color( 153, 51, 0, 255 )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 930, 480 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

@@ -1,0 +1,138 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel3:::::x, comp panel4::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel3:::p::p, space s:::p, comp panel4:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"$sizePolicy": 1
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label8:::p:326:p, space ::550:x, comp label11:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label11:::p:38:p, comp label8:::p::p}, space :::x}}"
+			} ) {
+				name: "panel3"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Account Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :p:50:p, par t {seq {comp depositBTN:::p:230:p, space ::367:x, comp backBTN:::p:230:p, space :p:46:p}, seq {par l {par l:::p {comp label12::l::120:x, comp label13::l:::x}, comp removeAccountBTN::l:p:230:p}, par l {seq {space :::x, par l:::p {comp BalanceLBL::::346:x, comp ownerLBL::::346:x}, space :p:291:p}, seq l {space :p:63:p, par l {comp withdrawalBTN:::p:230:p, comp getTransactionsBTN:::p:230:p}, space :p:74:p, comp ownerInfoBTN:::p:230:p, space ::46:x}}}}}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label12::b:p:40:p, comp ownerLBL::b:::x}, space :::p, par b {comp label13::b:p:40:p, comp BalanceLBL::b:p:40:p}, space :p:160:p, par b {comp depositBTN::b:p::p, comp getTransactionsBTN::b:p:50:p, comp ownerInfoBTN::b:p::p}, space :p:30:p, par b {comp removeAccountBTN::b:p:50:p, comp withdrawalBTN::b:p::p, comp backBTN::b:p:50:p}, space :p:39:p}}"
+			} ) {
+				name: "panel4"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "depositBTN"
+					"text": "Deposit"
+					"background": new java.awt.Color( 0, 0, 51, 255 )
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/green plus.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "depositBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "Owner"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/user.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "Balance"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/dollar.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ownerLBL"
+					"text": "text"
+					"font": &Font2 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "BalanceLBL"
+					"text": "text"
+					"font": #Font2
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "withdrawalBTN"
+					"text": "Withdrawal"
+					"background": new java.awt.Color( 75, 0, 0, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/minus 2.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "withdrawalBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "ownerInfoBTN"
+					"text": "Owner  Info"
+					"background": new java.awt.Color( 0, 51, 0, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/info.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ownerInfoBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "getTransactionsBTN"
+					"text": "Get Transactions"
+					"background": new java.awt.Color( 25, 0, 25, 255 )
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/money-transfer.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "getTransactionsBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "removeAccountBTN"
+					"text": "Remove Account"
+					"background": new java.awt.Color( 0, 51, 51, 255 )
+					"font": &Font3 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": &Cursor1 new java.awt.Cursor( 12 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/remove-friend.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeAccountBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backBTN"
+					"text": "Back"
+					"background": new java.awt.Color( 153, 51, 0, 255 )
+					"font": #Font3
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor1
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/back icon.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 925, 515 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

@@ -1,0 +1,151 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:326:p, space ::425:x, comp label2:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par t {comp label2:::p:38:p, comp label1:::p::p}, space :::x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Bus Terminal  Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :p:62:p, par l {seq {comp label9:::p:145:p, space s:::p, comp costsLBL:::p:346:p}, seq {comp label8:::p:145:p, space s:::p, comp personnelsLBL:::p:346:p}, seq {comp label6:::p:145:p, space s:::p, comp vehicleLBL:::p:346:p}, seq {comp label5:::p:145:p, space s:::p, comp spaceLBL:::p:346:p}, seq {comp label4:::p:145:p, space s:::p, comp addressLBL:::p:346:p}, seq {comp label3:::p:145:p, space s:::p, comp nameLBL:::p:346:p}}}, seq l {space :p:282:p, comp okBTN:::p:230:p}}, space ::227:x}}"
+				"$verticalGroup": "par l {seq t {space :::p, par b {comp label3::b:p:40:p, comp nameLBL::b:p:40:p}, space s:::p, par b {comp label4::b:p:40:p, comp addressLBL::b:p:40:p}, space s:::p, par b {comp label5::b:p:40:p, comp spaceLBL::b:p:40:p}, space s:::p, par b {comp label6::b:p:40:p, comp vehicleLBL::b:p:40:p}, space s:::p, par b {comp label8::b:p:40:p, comp personnelsLBL::b:p:40:p}, space s:::p, par b {comp label9::b:p:40:p, comp costsLBL::b:p:40:p}, space :::p, comp okBTN:::p::p, space ::13:x}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Name"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/bus terminal icon.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Address"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/address.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Space"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/volume.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Vehicles"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/bus.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Personnels"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/personnel.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Costs"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/budget (1).png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameLBL"
+					"text": "text"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "addressLBL"
+					"text": "text"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "spaceLBL"
+					"text": "text"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "vehicleLBL"
+					"text": "text"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "personnelsLBL"
+					"text": "text"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "costsLBL"
+					"text": "text"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okBTN"
+					"text": "Ok"
+					"background": new java.awt.Color( 1, 18, 1, 255 )
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": new java.awt.Cursor( 12 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/red checked.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 800, 505 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

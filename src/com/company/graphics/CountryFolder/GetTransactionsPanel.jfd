@@ -1,0 +1,68 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel3:::::x, comp panel4::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel3:::p::p, space s:::p, comp panel4:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"$sizePolicy": 1
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label8:::p:326:p, space ::550:x, comp label11:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label11:::p:38:p, comp label8:::p::p}, space :::x}}"
+			} ) {
+				name: "panel3"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Get Transactions"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space ::348:x, comp closeBTN:::p:230:p, space :p:345:p}, seq l {space :p:57:p, comp scrollPane1:::p:810:p, space ::56:x}}"
+				"$verticalGroup": "par l {seq l {space :p:19:p, comp scrollPane1::::304:x, space u:::p, comp closeBTN:::p::p, space :p:15:p}}"
+			} ) {
+				name: "panel4"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "closeBTN"
+					"text": "Close"
+					"background": new java.awt.Color( 0, 30, 30, 255 )
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": new java.awt.Cursor( 12 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeBTNActionPerformed", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "transactionTXA"
+						"background": new java.awt.Color( 0, 0, 51, 255 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"font": new java.awt.Font( "Myanmar Text", 0, 18 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 9
+						}
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 925, 500 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

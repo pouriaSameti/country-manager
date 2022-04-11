@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, comp selectCityPanel::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space ::21:x, comp selectCityPanel:::p::p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"undecorated": true
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:174:p, space :::x, comp label2:::p:37:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp label2:::::x}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Travel Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:21:p, par t {comp startCityInfoBTN:::p:61:p, par l:::p {seq l {comp label3:::p:114:p, space s:::p, comp startCityCMB:::::x}, par t:l {comp destinationCityInfoBTN:::p:61:p, seq {comp label5:::p::p, space :::p, comp destinationCityCMB:::p:150:p}, comp nextBTN::l:p:150:p}}}, space ::335:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label3::b:p:42:p, comp startCityCMB::b:p::p}, space :::p, comp startCityInfoBTN:::p::p, space :p:34:p, par b {comp label5::b:p:42:p, comp destinationCityCMB::b:p::p}, space :::p, comp destinationCityInfoBTN:::p::p, space :::x, comp nextBTN:::p:50:p, space :p:59:p}}"
+			} ) {
+				name: "selectCityPanel"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Origin City"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "startCityCMB"
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "startCityInfoBTN"
+					"text": "Info"
+					"foreground": &Color1 new java.awt.Color( 255, 255, 255, 255 )
+					"background": &Color2 new java.awt.Color( 0, 0, 102, 255 )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startCityInfoBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Destination city"
+					"font": #Font0
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "destinationCityCMB"
+					"cursor": #Cursor0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "destinationCityInfoBTN"
+					"text": "Info"
+					"foreground": #Color1
+					"background": #Color2
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "destinationCityInfoBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "nextBTN"
+					"text": "Next"
+					"foreground": #Color1
+					"background": new java.awt.Color( 153, 38, 0, 255 )
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/enter.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "nextBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 650, 410 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
+

@@ -1,0 +1,105 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"defaultCloseOperation": 3
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:326:p, space ::555:x, comp label2:::p:35:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp label2:::::x}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Create Building Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:35:p, par t {comp trainStationBTN:::p:190:p, comp airportBTN:::p:190:p}, space :p:142:p, par l {comp busTerminalBTN::t:p:190:p, comp hotelBTN::t:p:190:p}, space ::156:x, par l:::p {comp seaportBTN::::190:x, comp bankBTN::::190:x}, space :p:25:p}}"
+				"$verticalGroup": "par l {seq l {space :p:89:p, par b {comp seaportBTN::b:p::p, comp busTerminalBTN::b:p::p, comp airportBTN::b:p:50:p}, space ::126:x, par b {comp hotelBTN::b:p::p, comp trainStationBTN::b:p::p, comp bankBTN::b:p::p}, space :p:85:p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "airportBTN"
+					"text": "Airport"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/airport.png" )
+					"background": new java.awt.Color( 51, 0, 51, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "airportBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "busTerminalBTN"
+					"text": "Bus Terminal"
+					"font": #Font0
+					"foreground": #Color0
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/bus terminal icon.png" )
+					"background": new java.awt.Color( 0, 102, 102, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "busTerminalBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "seaportBTN"
+					"text": "Seaport"
+					"font": #Font0
+					"foreground": #Color0
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/seaport.png" )
+					"background": new java.awt.Color( 0, 102, 51, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "seaportBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "trainStationBTN"
+					"text": "Train Station"
+					"font": #Font0
+					"foreground": #Color0
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/train station.png" )
+					"background": new java.awt.Color( 204, 0, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "trainStationBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "hotelBTN"
+					"text": "Hotel"
+					"font": #Font0
+					"foreground": #Color0
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/hotel.png" )
+					"background": new java.awt.Color( 204, 51, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "hotelBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "bankBTN"
+					"text": "Bank"
+					"font": #Font0
+					"foreground": #Color0
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 0, 0, 102, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/banking.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bankBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 930, 500 )
+		} )
+	}
+}

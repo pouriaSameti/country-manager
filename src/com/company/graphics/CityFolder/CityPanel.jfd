@@ -1,0 +1,155 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space s:::p, comp panel2:::::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/main picture.jpg" )
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:165:p, space ::711:x, comp label2:::p:40:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp label2:::::x}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "City Menu"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:24:p, par l {seq {par l {comp removePeopleBTN:::::x, seq {comp addPeopleBTN:::p:225:p, space :0:0:x}}, space :p:82:p, par l {comp removeBuildingBTN:::::x, seq {comp addBuildingBTN:::p:225:p, space :0:0:x}}, space ::109:x, par l {comp getCityBuildingBTN:::p:225:p, comp getPeopleBTN:::p:225:p}, space ::38:x}, seq {comp cityNameLBL:::p:405:p, space ::499:x}, seq {par l {comp populationLBL:::p:405:p, comp vehiclesLBL::l:p:405:p, comp buildingsLBL::l:p:405:p, comp budjetLBL::l:p:405:p}, space :0:499:x}}}}"
+				"$verticalGroup": "par l {seq t {space :::p, comp cityNameLBL:::p:41:p, space :::p, comp populationLBL:::p:41:p, space :::p, comp vehiclesLBL:::p:41:p, space :::p, comp buildingsLBL:::p:41:p, space :::p, comp budjetLBL:::p:41:p, space ::29:x, par b {comp addPeopleBTN::b:p:50:p, comp addBuildingBTN::b:p::p, comp getCityBuildingBTN::b:p::p}, space u:::p, par b {comp removePeopleBTN::b:p::p, comp removeBuildingBTN::b:p::p, comp getPeopleBTN::b:p::p}, space :p:24:p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addPeopleBTN"
+					"text": "Add People"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 0, 0, 51, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/add-user.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addPeopleBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addBuildingBTN"
+					"text": "Add Building"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/add building.png" )
+					"background": new java.awt.Color( 0, 51, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBuildingBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "getCityBuildingBTN"
+					"text": "Get Buildings"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 23, 0, 23, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/building.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "getCityBuildingBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "removePeopleBTN"
+					"text": "Remove People"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 102, 0, 0, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/remove-friend.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removePeopleBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "removeBuildingBTN"
+					"text": "Remove Building"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/remove building.png" )
+					"background": new java.awt.Color( 0, 51, 51, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeBuildingBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cityNameLBL"
+					"text": "City Name : "
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/City icon.png" )
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "populationLBL"
+					"text": "Population :"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/population.png" )
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "vehiclesLBL"
+					"text": "Vehicles :"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/vehicle.png" )
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "buildingsLBL"
+					"text": "Buildings :"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/architecture-and-city Icon.png" )
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "budjetLBL"
+					"text": "Budget :"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/dollar.png" )
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "getPeopleBTN"
+					"text": "Get People"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 20, 17, 10, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/contact-list.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "getPeopleBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 930, 500 )
+		} )
+	}
+}
