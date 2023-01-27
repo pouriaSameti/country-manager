@@ -1,4 +1,4 @@
-# Advanced-Programming-Final-Project-_-country-manager
+# Advanced Programming Final Project-country manager
 
 we have a manager or president that controls all events in this program. the president can create or remove a city, any city has the population and people can travel to other cities. 
 
